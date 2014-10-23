@@ -16,7 +16,7 @@ def prime_fact(n)
     (2..y - 1).each { |z| non_prime << y if y % z == 0 }   
   end   
   
-  # remove 1 form list of possible prime factors. should probably make this part of the factor finding algorithm
+  # remove 1 from list of possible prime factors. should probably make this part of the factor finding algorithm
   factors.delete(1)
   primes = factors - non_prime
   
